@@ -1,0 +1,243 @@
+*{
+    font-family: Arial, Helvetica, sans-serif; 
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    width: 80%;
+    margin: 0px auto;
+    background-color: rgb(255, 219, 225);
+    text-align: center;   
+}
+.your-balance{
+    width: 100%;
+    max-width: 500px;
+    min-width: 200px;
+    margin: auto;
+    text-align: left;
+    padding: 20px;
+}
+.your-balance > h3{
+    font-size: 20px;
+    font-weight: bolder;
+    margin: 10px 0px;
+}
+.your-balance > P{
+    font-size: 24px
+}
+.header{
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.header p{
+    text-align: left;
+    font-size: 24px;
+}
+#income{
+    padding: 10px 30px;
+    border: 1px solid rgb(0, 0, 37);
+    border-radius: 5px;
+    background-color: rgb(108, 228, 61);
+    color: white;
+    font-weight: bolder;
+    font-size: 16px;
+    margin-right: 20px;
+    /* text-align: left; */
+
+}
+#expense{
+    padding: 10px 30px;
+    border: 1px solid rgb(0, 0, 37);
+    border-radius: 5px;
+    background-color: rgb(201, 48, 37);
+    color: white;
+    font-weight: bolder;
+    font-size: 16px;
+    /* text-align: left; */
+    /* margin-right: 20px; */
+}
+.form-div{
+    padding: 20px;
+}
+.expense-divs{
+    display: flex;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: center;
+    margin-right: 100px;
+}
+.add,.options {
+    width: 100%;
+    max-width: 500px;
+    min-width: 200px;
+    height: 5%;
+    padding: 10px;
+    border: 1px solid rgb(0, 0, 37);
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    outline: none;
+    font-weight: lighter;
+}
+.expense-details{
+    width: 10%;
+
+    font-size: 18px;
+    font-weight: bolder;
+    text-align: right;
+    margin-right: 20px;
+}
+#amount{
+    width: 80%;
+    max-width: 400px;
+    min-width: 100px;
+    border-radius: 5px 0px 0px 5px;
+}
+.options{
+    width: 20%;
+    max-width: 100px;
+    min-width: 50px;
+    border-radius: 0px 5px 5px 0px;
+    margin-left: 0px;
+    outline: none;
+    font-size: 14px;
+}
+#addItemBtn {
+    margin-top: 20px;
+    padding: 10px 30px;
+    border: 1px solid rgb(0, 0, 37);
+    border-radius: 5px;
+    background-color: rgb(23, 0, 49);
+    color: white;
+    font-weight: bolder;
+    font-size: 20px;
+}
+table{
+    width: 90%;
+    margin: 30px auto;
+    padding: 0px 20px;
+    text-align: left;
+}
+thead{
+    background-color: rgb(192, 192, 192);
+}
+.Income{
+    background-color: rgb(154, 236, 122);
+}
+.Expense{
+    background-color: rgb(226, 124, 116);
+}
+thead tr th, tbody tr td{
+    padding: 10px 20px;
+}
+.background-none{
+    background-color: transparent;
+    padding: 0px 0px;
+}
+.delete-btn{
+    outline: none;
+    background-color: transparent;
+    text-align: center;
+    border: none;
+    /* background-color: white; */
+    padding: 0px 0px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.delete-btn:hover{
+    color: rgb(255, 0, 0);
+}
+
+@media screen and (max-width: 900px){
+    .expense-divs{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 10px auto 10px auto ;
+        /* justify-content: center; */
+        /* margin-right: 100px; */
+    }
+    .expense-details{
+        width: 100%;
+        text-align: left;
+        margin-left: 20px;
+    }
+    .add,.options {
+        width: 100%;
+        max-width: 900px;
+        min-width: 200px;
+        margin: 10px 0px;
+    }
+    #amount{
+        width: 100%;
+        max-width: 900px;
+        min-width: 200px;
+        border-radius: 5px 0px 0px 5px;
+    }
+
+
+}
+@media screen and (max-width: 500px){
+    .header p{
+        text-align: left;
+        font-size: 20px;
+    }
+    #income{
+        padding: 10px 15px;
+        font-weight: 500;
+        font-size: 14px;
+        margin-top: 5px;        
+        margin-right: 15px;
+    }
+    #expense{
+        padding: 10px 15px;
+        font-weight: 500;
+        font-size: 14px;
+        margin-top: 5px;
+    }
+    .expense-divs{
+        margin: 0px auto 0px auto ;
+    }
+    .expense-details{
+        font-size: 14px;
+    }
+    .form-div{
+        padding: 10px;
+    }
+    .add,.options {
+        font-size: 14px;
+        padding: 5px;
+    }
+    #addItemBtn {
+        padding: 10px 10px;
+        font-size: 14px;
+        font-weight: 500;
+        margin-top: 10px;
+    }
+    table{
+        width: 100%;
+        max-width: 900px;
+        min-width: 200px;
+        margin: 15px auto;
+        padding: 0px 5px;
+        text-align: left;
+    }
+    thead tr th, tbody tr td{
+        padding: 10px 10px;
+    }
+    th{
+        font-size: 14px;
+    }
+    tr td{
+        font-size: 14px;
+    }
+    .delete-btn{
+        font-size: 14px;
+    }
+
+}
